@@ -120,7 +120,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    FootejCamera
+    GCamGOPrebuilt
 
 PRODUCT_PACKAGES += \
     libwa_dof
