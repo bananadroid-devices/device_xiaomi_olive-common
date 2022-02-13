@@ -220,18 +220,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
-# Longshot
-PRODUCT_PACKAGES += \
-    CustomQSLonghsot \
-    StitchImage \
-    StitchImageService
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/com.asus.stitchimage.service-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/com.asus.stitchimage.service-hiddenapi-package-whitelist.xml \
-    $(LOCAL_PATH)/configs/com.asus.stitchimage-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/com.asus.stitchimage-hiddenapi-package-whitelist.xml      
-
-
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_8937_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_8937_v1.xml \
@@ -378,10 +366,6 @@ PRODUCT_PACKAGES += \
 # Whitelisted app
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-huaqin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-huaqin.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions-com.asus.stitchimage.service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.asus.stitchimage.service.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions-com.asus.stitchimage.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.asus.stitchimage.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions-com.customqs.lonshot.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.customqs.lonshot.xml \
-    $(LOCAL_PATH)/default-permissions/default-asus-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default-asus-permissions.xml
 
 # Wifi
 PRODUCT_PACKAGES += \
